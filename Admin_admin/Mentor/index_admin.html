@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from mentoring-laravel.dreamguystech.com/template/public/admin/index_admin by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Jul 2022 19:40:40 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+<title>base30 - Dashboard Mentor</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="../assets_admin/img/base30/LOGO1.png">
+
+<link rel="stylesheet" href="../assets_admin/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="../assets_admin/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="../assets_admin/plugins/select2/css/select2.min.css">
+
+<link rel="stylesheet" href="../assets_admin/css/feathericon.min.css">
+<link rel="stylesheet" href="../assets_admin/plugins/morris/morris.css">
+
+<link rel="stylesheet" href="../assets_admin/plugins/datatables/datatables.min.css">
+
+<link rel="stylesheet" href="../assets_admin/css/style.css"> 
+</head>
+<body>
+
+<div class="main-wrapper">
+
+<div class="header">
+
+<div class="header-left">
+<a href="index_admin.html" class="logo">
+<img src="../assets_admin/img/base30/LOGO1.png" alt="Logo" height="60px">
+</a>
+<a href="index_admin.html" class="logo logo-small">
+<img src="../assets_admin/img/base30/LOGO1.png" alt="Logo" width="30" height="30">
+</a>
+</div>
+
+<a href="javascript:void(0);" id="toggle_btn">
+<i class="fe fe-text-align-left"></i>
+</a>
+<div class="top-nav-search">
+<form>
+<input type="text" class="form-control" placeholder="Search here">
+<button class="btn" type="submit"><i class="fa fa-search"></i></button>
+</form>
+</div>
+
+<a class="mobile_btn" id="mobile_btn">
+<i class="fa fa-bars"></i>
+</a>
+
+
+<ul class="nav user-menu">
+
+
+
+
+<li class="nav-item dropdown has-arrow">
+<a href="#" class="dropdown-toggle nav-link" data-bs-toggle="dropdown">
+<span class="user-img"><img class="rounded-circle" src="../assets_admin/img/base30/autre (6).jpg" width="31" alt="Ryan Taylor"></span>
+</a>
+<div class="dropdown-menu">
+<div class="user-header">
+<div class="avatar avatar-sm">
+<img src="../assets_admin/img/base30/autre (6).jpg" alt="User Image" class="avatar-img rounded-circle">
+</div>
+<div class="user-text">
+<h6>Maximus Ndamboka</h6>
+<p class="text-muted mb-0">Mentor</p>
+</div>
+</div>
+<a class="dropdown-item" href="profile.html">My Profile</a>
+<a class="dropdown-item" href="settings.html">Settings</a>
+<a class="dropdown-item" href="login.html">Logout</a>
+</div>
+</li>
+
+</ul>
+
+</div>
+ 
+<div class="sidebar" id="sidebar">
+<div class="sidebar-inner slimscroll">
+<div id="sidebar-menu" class="sidebar-menu">
+<ul>
+<li class="menu-title">
+<span><i class="fe fe-home"></i> Main</span>
+</li>
+<li class="active">
+<a href="index_admin.html"><span>Dashboard</span></a>
+</li>
+<li class="submenu">
+<a href="#"><span>Mentor</span> <span class="menu-arrow"></span></a>
+<ul style="display: none;">
+<li><a href="profile.html">Mentor Profil</a></li>
+<li><a href="mentee.html">Mentee </a></li>
+<li><a href="mentorplanning.html">Mentor Planning </a></li>
+</ul>
+</li>
+
+<li class="submenu">
+    <a href="#"><span>Blog</span> <span class="menu-arrow"></span></a>
+    <ul style="display: none;">
+    <li><a class="" href="blog.html"> Blog </a></li>
+    <li><a class="" href="blog-details.html"> Blog Details </a></li>
+    <li><a class="" href="add-blog.html"> Add Blog </a></li>
+    <li><a class="" href="edit-blog.html"> Edit Blog </a></li>
+    </ul>
+</li>
+<li><a href="event.html">Event Planning</a></li>
+<li class="">
+<a href="profile.html"><span>My Profile</span></a>
+</li>
+<li>
+    <a href="login.html">logout </a>
+</li>
+
+
+</ul>
+</li>
+
+</ul>
+</div>
+</div>
+</div>
+
+
+<div class="page-wrapper">
+<div class="content container-fluid">
+
+<div class="page-header">
+<div class="row">
+<div class="col-sm-12">
+<h3 class="page-title">Welcome Mentor!</h3>
+<ul class="breadcrumb">
+<li class="breadcrumb-item active">Dashboard</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="col-xl-3 col-sm-6 col-12">
+<div class="card">
+<div class="card-body">
+<div class="dash-widget-header">
+<span class="dash-widget-icon text-primary border-primary">
+<i class="fe fe-users"></i>
+</span>
+<div class="dash-count">
+<h3>168</h3>
+</div>
+</div>
+<div class="dash-widget-info">
+<h6 class="text-muted">Mentee</h6>
+<div class="progress progress-sm">
+<div class="progress-bar bg-primary w-50"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xl-3 col-sm-6 col-12">
+<div class="card">
+<div class="card-body">
+<div class="dash-widget-header">
+<span class="dash-widget-icon text-success">
+<i class="fe fe-credit-card"></i>
+</span>
+<div class="dash-count">
+<h3>487</h3>
+</div>
+</div>
+<div class="dash-widget-info">
+<h6 class="text-muted">Events</h6>
+<div class="progress progress-sm">
+<div class="progress-bar bg-success w-50"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+</div>
+<div class="row">
+
+
+</div>
+<div class="row">
+
+<div class="col-md-12 d-flex">
+
+<div class="card  card-table flex-fill">
+<div class="card-header">
+<h4 class="card-title">Mentee List</h4>
+</div>
+<div class="card-body">
+<div class="table-responsive">
+<table class="table table-hover table-center mb-0">
+<thead>
+<tr>
+<th>Mentee Name</th>
+<th>Phone</th>
+<th>Last Visit</th>
+
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<h2 class="table-avatar">
+<a href="profile.html" class="avatar avatar-sm me-2"><img class="avatar-img rounded-circle" src="../assets_admin/img/base30/11.jpg" alt="User Image"></a>
+<a href="profile.html">Joel Deo </a>
+</h2>
+</td>
+<td>8286329170</td>
+<td>20 Oct 2019</td>
+
+</tr>
+<tr>
+<td>
+<h2 class="table-avatar">
+<a href="profile.html" class="avatar avatar-sm me-2"><img class="avatar-img rounded-circle" src="../assets_admin/img/base30/2 (1).jpg" alt="User Image"></a>
+<a href="profile.html">Linda wa Nciko</a>
+</h2>
+</td>
+<td>2077299974</td>
+<td>22 Oct 2019</td>
+
+</tr>
+<tr>
+<td>
+<h2 class="table-avatar">
+<a href="profile.html" class="avatar avatar-sm me-2"><img class="avatar-img rounded-circle" src="../assets_admin/img/base30/2 (2).jpg" alt="User Image"></a>
+<a href="profile.html">Micheal Mwenge</a>
+</h2>
+</td>
+<td>2607247769</td>
+<td>21 Oct 2019</td>
+
+</tr>
+<tr>
+<td>
+<h2 class="table-avatar">
+<a href="profile.html" class="avatar avatar-sm me-2"><img class="avatar-img rounded-circle" src="../assets_admin/img/base30/10.jpg" alt="User Image"></a>
+<a href="profile.html">Caleb .... </a>
+</h2>
+</td>
+<td>5043686874</td>
+<td>21 Sep 2019</td>
+
+</tr>
+
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+<div class="row">
+<div class="col-md-12">
+
+
+
+</div>
+</div>
+</div>
+</div>
+
+</div>
+
+
+<script src="../assets_admin/js/jquery-3.6.0.min.js"></script>
+
+<script src="../assets_admin/js/popper.min.js"></script>
+<script src="../assets_admin/js/bootstrap.bundle.min.js"></script>
+
+<script src="../assets_admin/plugins/select2/js/select2.min.js"></script>
+
+<script src="../assets_admin/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+<script src="../assets_admin/js/form-validation.js"></script>
+
+<script src="../assets_admin/js/jquery.maskedinput.min.js"></script>
+<script src="../assets_admin/js/mask.js"></script>
+<script src="../assets_admin/plugins/raphael/raphael.min.js"></script>
+<script src="../assets_admin/plugins/morris/morris.min.js"></script>
+<script src="../assets_admin/js/chart.morris.js"></script>
+
+<script src="../assets_admin/plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="../assets_admin/plugins/datatables/datatables.min.js"></script>
+
+<script src="../assets_admin/js/script.js"></script> </body>
+
+<!-- Mirrored from mentoring-laravel.dreamguystech.com/template/public/admin/index_admin by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Jul 2022 19:41:16 GMT -->
+</html>
